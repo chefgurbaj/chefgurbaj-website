@@ -2,16 +2,16 @@
 // Footer.astro
 const year = new Date().getFullYear();
 ---
-<footer class="w-full py-12 px-4 md:px-8 bg-obsidian-black border-t border-slate-grey/20">
+<footer class="w-full py-12 px-4 md:px-8 bg-slate-50 dark:bg-obsidian-black border-t border-slate-300 dark:border-slate-grey/20">
   <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
     <div class="text-center md:text-left">
-      <p class="font-heading text-xl text-pristine-white">CHEF GURBAJ</p>
-      <p class="text-sm text-slate-grey mt-2">© {year} All Rights Reserved.</p>
+      <p class="font-heading text-xl text-obsidian-black dark:text-pristine-white">CHEF GURBAJ</p>
+      <p class="text-sm text-slate-700 dark:text-slate-grey mt-2">© {year} All Rights Reserved.</p>
     </div>
     
     <div class="flex gap-4">
       <!-- Email link instead of standard contact -->
-      <a href="https://wa.me/917021293289" target="_blank" rel="noopener noreferrer" class="text-slate-grey hover:text-saffron-gold transition-colors text-sm">
+      <a href="https://wa.me/917021293289" target="_blank" rel="noopener noreferrer" class="text-slate-700 dark:text-slate-grey hover:text-saffron-gold transition-colors text-sm">
         WhatsApp Us
       </a>
     </div>
