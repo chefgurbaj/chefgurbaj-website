@@ -1,0 +1,46 @@
+---
+interface Props {
+  class?: string;
+}
+const { class: className = '' } = Astro.props;
+---
+
+<div class:list={["w-full flex justify-center items-center py-12 relative overflow-hidden", className]}>
+  <div class="relative w-48 md:w-64 opacity-60 hover:opacity-100 transition-opacity duration-700">
+    <!-- SVG Chef Knife -->
+    <svg viewBox="0 0 200 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full drop-shadow-[0_2px_10px_rgba(244,196,48,0.2)]">
+      <!-- Handle -->
+      <path d="M10 20C10 16 12 14 15 14H50C52 14 54 16 54 20C54 24 52 26 50 26H15C12 26 10 24 10 20Z" fill="#1A1A1A" stroke="#333333" stroke-width="1"/>
+      <!-- Handle Rivets -->
+      <circle cx="20" cy="20" r="1.5" fill="#666666"/>
+      <circle cx="35" cy="20" r="1.5" fill="#666666"/>
+      <!-- Blade -->
+      <path d="M54 14H180C190 14 195 20 190 25C170 35 100 35 54 26V14Z" fill="url(#blade-gradient)"/>
+      <!-- Edge Highlight -->
+      <path d="M54 26C100 35 170 35 190 25" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="0.5"/>
+      
+      <defs>
+        <linearGradient id="blade-gradient" x1="54" y1="14" x2="190" y2="35" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#4A4A4A"/>
+          <stop offset="0.5" stop-color="#888888"/>
+          <stop offset="1" stop-color="#333333"/>
+        </linearGradient>
+      </defs>
+    </svg>
+    <!-- Gleam Animation -->
+    <div class="absolute inset-0 z-10 w-full h-full pointer-events-none overflow-hidden" style="mask-image: url('data:image/svg+xml;utf8,<svg viewBox=\"0 0 200 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M54 14H180C190 14 195 20 190 25C170 35 100 35 54 26V14Z\" fill=\"black\"/></svg>'); -webkit-mask-image: url('data:image/svg+xml;utf8,<svg viewBox=\"0 0 200 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M54 14H180C190 14 195 20 190 25C170 35 100 35 54 26V14Z\" fill=\"black\"/></svg>');">
+       <div class="w-[20%] h-full bg-gradient-to-r from-transparent via-white to-transparent opacity-70 animate-gleam mix-blend-overlay"></div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .animate-gleam {
+    animation: gleam 4s infinite ease-in-out;
+  }
+  @keyframes gleam {
+    0% { transform: translateX(-150%) skewX(-20deg); }
+    30% { transform: translateX(500%) skewX(-20deg); }
+    100% { transform: translateX(500%) skewX(-20deg); }
+  }
+</style>

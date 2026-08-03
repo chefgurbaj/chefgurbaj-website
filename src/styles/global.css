@@ -101,3 +101,19 @@
   0% { filter: blur(1px) brightness(1); }
   100% { filter: blur(2px) brightness(1.5); }
 }
+
+@keyframes steam-rise {
+  0% { transform: translateY(0) scale(1); opacity: 0; filter: blur(8px); }
+  50% { opacity: 0.3; }
+  100% { transform: translateY(-150px) scale(3); opacity: 0; filter: blur(20px); }
+}
+
+.steam {
+  position: absolute;
+  background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 70%);
+  border-radius: 50%;
+  animation: steam-rise 8s infinite ease-out;
+}
+.steam-1 { width: 100px; height: 100px; bottom: -50px; left: 30%; animation-delay: 0s; }
+.steam-2 { width: 150px; height: 150px; bottom: -80px; left: 50%; animation-delay: 3s; animation-duration: 10s; }
+.steam-3 { width: 120px; height: 120px; bottom: -60px; left: 70%; animation-delay: 1.5s; animation-duration: 7s; }
