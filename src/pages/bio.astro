@@ -1,0 +1,69 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ContactButton from '../components/ContactButton.astro';
+---
+
+<Layout title="Bio | Chef Gurbaj Singh">
+  <div class="max-w-4xl mx-auto px-4 py-20">
+    <h1 class="text-4xl md:text-6xl font-heading text-pristine-white mb-8 border-b border-slate-grey/20 pb-6">
+      The <span class="text-saffron-gold italic">Journey</span>
+    </h1>
+
+    <div class="prose prose-invert prose-p:text-slate-grey prose-headings:text-pristine-white max-w-none">
+      <p class="text-xl font-light leading-relaxed mb-12">
+        I am a high-performing Executive Chef offering deep restaurant experience. 
+        My talent lies in building streamlined, cohesive teams and maintaining absolute focus and productivity 
+        in high-volume, fast-paced operations. From sourcing premium ingredients to controlling budgets and 
+        boosting restaurant profiles, I am dedicated to creating seamless, unforgettable dining experiences.
+      </p>
+
+      <h2 class="text-2xl font-heading text-saffron-gold mt-12 mb-6">Experience</h2>
+      
+      <div class="space-y-12">
+        <div class="border-l-2 border-saffron-gold pl-6">
+          <h3 class="text-xl font-semibold">Cluster Executive Chef</h3>
+          <p class="text-slate-grey mb-2">OHRI'S GROUP, Hyderabad | Dec 2023 to Present</p>
+          <ul class="list-disc pl-5 text-sm text-slate-grey space-y-2">
+            <li>Fostered a positive working environment that encouraged collaboration and creativity.</li>
+            <li>Developed custom menus for clients with specific dietary restrictions, ensuring utmost satisfaction.</li>
+            <li>Implemented special events and theme nights to attract new clientele and boost sales.</li>
+            <li>Managed kitchen staff for efficient food production and timely delivery of high-quality dishes.</li>
+          </ul>
+        </div>
+
+        <div class="border-l-2 border-slate-grey/30 pl-6">
+          <h3 class="text-xl font-semibold">Executive Sous Chef</h3>
+          <p class="text-slate-grey mb-2">RR Hospitality, Bangalore | Feb 2023 to Present</p>
+          <ul class="list-disc pl-5 text-sm text-slate-grey space-y-2">
+            <li>Developed menus, controlled food costs, and oversaw quality, sanitation, and safety processes.</li>
+            <li>Plated every dish with attractive flair to meet strict restaurant standards.</li>
+            <li>Initiated training for new team members on culinary techniques to improve productivity.</li>
+            <li>Implemented successful cross-marketing strategies such as food and wine pairings.</li>
+          </ul>
+        </div>
+
+        <div class="border-l-2 border-slate-grey/30 pl-6">
+          <h3 class="text-xl font-semibold">Sr. Sous Chef</h3>
+          <p class="text-slate-grey mb-2">Roxie, Bangalore | Oct 2022 to Feb 2023</p>
+          <ul class="list-disc pl-5 text-sm text-slate-grey space-y-2">
+            <li>Created signature dish which generated high interest and became the best-selling dinner entrée.</li>
+            <li>Reduced food costs by 5% by sourcing and securing new vendor suppliers.</li>
+            <li>Re-designed kitchen stations and equipment placement which increased productivity.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-heading text-saffron-gold mt-16 mb-6">Education</h2>
+      <ul class="space-y-4">
+        <li>
+          <strong class="text-pristine-white block">Bachelors In Culinary Arts</strong>
+          <span class="text-slate-grey">Queen Margrate University, Edinburg, Navi Mumbai (2014 to 2017)</span>
+        </li>
+      </ul>
+
+      <div class="mt-16 text-center">
+        <ContactButton text="Get In Touch" intent="general" />
+      </div>
+    </div>
+  </div>
+</Layout>

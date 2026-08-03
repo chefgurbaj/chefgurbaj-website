@@ -1,0 +1,32 @@
+---
+interface Props {
+  text?: string;
+  intent?: 'consultation' | 'aspiring-chef' | 'general';
+  class?: string;
+}
+
+const { text = "Contact on WhatsApp", intent = 'general', class: className = '' } = Astro.props;
+
+const phone = '917021293289';
+
+let message = 'Hi Chef Gurbaj, I would like to connect with you.';
+if (intent === 'consultation') {
+  message = 'Hi Chef Gurbaj, I am interested in booking a consultation for my brand/restaurant.';
+} else if (intent === 'aspiring-chef') {
+  message = 'Hi Chef, I am an aspiring chef seeking guidance and looking to share my resume.';
+}
+
+const waUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+---
+
+<a 
+  href={waUrl}
+  target="_blank" 
+  rel="noopener noreferrer" 
+  class:list={[
+    "inline-block bg-saffron-gold text-obsidian-black font-semibold px-8 py-4 rounded-sm hover:bg-white transition-colors duration-300",
+    className
+  ]}
+>
+  {text}
+</a>
