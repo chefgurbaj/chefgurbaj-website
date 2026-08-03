@@ -28,13 +28,17 @@ const { class: className = '' } = Astro.props;
       </defs>
     </svg>
     <!-- Gleam Animation -->
-    <div class="absolute inset-0 z-10 w-full h-full pointer-events-none overflow-hidden" style="mask-image: url('data:image/svg+xml;utf8,<svg viewBox=\"0 0 200 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M54 14H180C190 14 195 20 190 25C170 35 100 35 54 26V14Z\" fill=\"black\"/></svg>'); -webkit-mask-image: url('data:image/svg+xml;utf8,<svg viewBox=\"0 0 200 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M54 14H180C190 14 195 20 190 25C170 35 100 35 54 26V14Z\" fill=\"black\"/></svg>');">
+    <div class="absolute inset-0 z-10 w-full h-full pointer-events-none overflow-hidden knife-mask">
        <div class="w-[20%] h-full bg-gradient-to-r from-transparent via-white to-transparent opacity-70 animate-gleam mix-blend-overlay"></div>
     </div>
   </div>
 </div>
 
 <style>
+  .knife-mask {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M54 14H180C190 14 195 20 190 25C170 35 100 35 54 26V14Z' fill='black'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M54 14H180C190 14 195 20 190 25C170 35 100 35 54 26V14Z' fill='black'/%3E%3C/svg%3E");
+  }
   .animate-gleam {
     animation: gleam 4s infinite ease-in-out;
   }
