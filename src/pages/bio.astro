@@ -4,105 +4,120 @@ import ContactButton from '../components/ContactButton.astro';
 ---
 
 <Layout title="Bio | Chef Gurbaj">
-  <div class="max-w-4xl mx-auto px-4 py-20">
+  <div class="max-w-6xl mx-auto px-4 py-20">
     <h1 class="text-4xl md:text-6xl font-heading text-obsidian-black dark:text-pristine-white mb-8 border-b border-slate-300 dark:border-slate-grey/20 pb-6">
       The <span class="bg-gradient-to-r from-[#b38b1d] via-[#f8e192] to-[#b38b1d] dark:from-[#d4af37] dark:via-[#f8e192] dark:to-[#d4af37] bg-[length:200%_auto] bg-clip-text text-transparent italic animate-gradient-wave">Journey</span>
     </h1>
 
-    <div class="prose dark:prose-invert prose-p:text-slate-700 dark:text-slate-grey prose-headings:text-obsidian-black dark:text-pristine-white max-w-none">
-      <p class="text-xl font-light leading-relaxed mb-12">
-        I am a high-performing Executive Chef offering deep restaurant experience. 
-        My talent lies in building streamlined, cohesive teams and maintaining absolute focus and productivity 
-        in high-volume, fast-paced operations. From sourcing premium ingredients to controlling budgets and 
-        boosting restaurant profiles, I am dedicated to creating seamless, unforgettable dining experiences.
-      </p>
+    <div class="flex flex-col lg:flex-row gap-12">
+      <div class="prose dark:prose-invert prose-p:text-slate-700 dark:text-slate-grey prose-headings:text-obsidian-black dark:text-pristine-white max-w-none lg:w-2/3">
+        <p class="text-xl font-light leading-relaxed mb-12">
+          I am a high-performing Executive Chef offering deep restaurant experience. 
+          My talent lies in building streamlined, cohesive teams and maintaining absolute focus and productivity 
+          in high-volume, fast-paced operations. From sourcing premium ingredients to controlling budgets and 
+          boosting restaurant profiles, I am dedicated to creating seamless, unforgettable dining experiences.
+        </p>
 
-      <h2 class="text-2xl font-heading text-saffron-gold mt-12 mb-6">Executive Roles</h2>
+        <h2 class="text-2xl font-heading text-saffron-gold mt-12 mb-6">Executive Roles</h2>
+        
+        <div class="space-y-12">
+          <div class="border-l-2 border-saffron-gold pl-6">
+            <h3 class="text-xl font-semibold">Cluster Executive Chef</h3>
+            <p class="text-slate-700 dark:text-slate-grey mb-2">OHRI'S GROUP, Hyderabad | Dec 2023 to Present</p>
+            <ul class="list-disc pl-5 text-sm text-slate-700 dark:text-slate-grey space-y-2">
+              <li>Fostered a positive working environment that encouraged collaboration and creativity.</li>
+              <li>Developed custom menus for clients with specific dietary restrictions, ensuring utmost satisfaction.</li>
+              <li>Implemented special events and theme nights to attract new clientele and boost sales.</li>
+              <li>Managed kitchen staff for efficient food production and timely delivery of high-quality dishes.</li>
+            </ul>
+          </div>
+
+          <div class="border-l-2 border-slate-300 dark:border-slate-grey/30 pl-6">
+            <h3 class="text-xl font-semibold">Executive Sous Chef</h3>
+            <p class="text-slate-700 dark:text-slate-grey mb-2">RR Hospitality, Bangalore | Feb 2023 to Present</p>
+            <ul class="list-disc pl-5 text-sm text-slate-700 dark:text-slate-grey space-y-2">
+              <li>Developed menus, controlled food costs, and oversaw quality, sanitation, and safety processes.</li>
+              <li>Plated every dish with attractive flair to meet strict restaurant standards.</li>
+              <li>Initiated training for new team members on culinary techniques to improve productivity.</li>
+              <li>Implemented successful cross-marketing strategies such as food and wine pairings.</li>
+            </ul>
+          </div>
+
+          <div class="border-l-2 border-slate-300 dark:border-slate-grey/30 pl-6">
+            <h3 class="text-xl font-semibold">Sr. Sous Chef</h3>
+            <p class="text-slate-700 dark:text-slate-grey mb-2">Roxie, Bangalore | Oct 2022 to Feb 2023</p>
+            <ul class="list-disc pl-5 text-sm text-slate-700 dark:text-slate-grey space-y-2">
+              <li>Created signature dish which generated high interest and became the best-selling dinner entrée.</li>
+              <li>Reduced food costs by 5% by sourcing and securing new vendor suppliers.</li>
+              <li>Re-designed kitchen stations and equipment placement which increased productivity.</li>
+            </ul>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-heading text-saffron-gold mt-16 mb-6">Brand Affiliations & Kitchen Experience</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+          <div class="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 p-4 rounded-sm text-center font-heading tracking-widest uppercase">The Oberoi</div>
+          <div class="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 p-4 rounded-sm text-center font-heading tracking-widest uppercase">ST. REGIS</div>
+          <div class="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 p-4 rounded-sm text-center font-heading tracking-widest uppercase">Sofitel</div>
+          <div class="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 p-4 rounded-sm text-center font-heading tracking-widest uppercase">House of Bakers</div>
+          <div class="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 p-4 rounded-sm text-center font-heading tracking-widest uppercase">Sound Cafe</div>
+        </div>
+
+        <h2 class="text-2xl font-heading text-saffron-gold mt-16 mb-6">Consultation Projects</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+          <div class="border border-saffron-gold/30 p-4 rounded-sm text-center">
+            <div class="font-heading tracking-widest uppercase mb-1">Mara Coffee</div>
+            <div class="text-xs text-slate-700 dark:text-slate-grey uppercase">Bangalore</div>
+          </div>
+          <div class="border border-saffron-gold/30 p-4 rounded-sm text-center">
+            <div class="font-heading tracking-widest uppercase mb-1">Dupion</div>
+            <div class="text-xs text-slate-700 dark:text-slate-grey uppercase">Jaipur</div>
+          </div>
+          <div class="border border-saffron-gold/30 p-4 rounded-sm text-center">
+            <div class="font-heading tracking-widest uppercase mb-1">Cabami</div>
+            <div class="text-xs text-slate-700 dark:text-slate-grey uppercase">Varanasi</div>
+          </div>
+          <div class="border border-saffron-gold/30 p-4 rounded-sm text-center">
+            <div class="font-heading tracking-widest uppercase mb-1">Fika</div>
+            <div class="text-xs text-slate-700 dark:text-slate-grey uppercase">Goa</div>
+          </div>
+          <div class="border border-saffron-gold/30 p-4 rounded-sm text-center">
+            <div class="font-heading tracking-widest uppercase mb-1">Fixcabami</div>
+            <div class="text-xs text-slate-700 dark:text-slate-grey uppercase">Goa</div>
+          </div>
+          <div class="border border-saffron-gold/30 p-4 rounded-sm text-center">
+            <div class="font-heading tracking-widest uppercase mb-1">Minimalist Hotel</div>
+          </div>
+          <div class="border border-saffron-gold/30 p-4 rounded-sm text-center">
+            <div class="font-heading tracking-widest uppercase mb-1">Hideon Cafe</div>
+            <div class="text-xs text-slate-700 dark:text-slate-grey uppercase">Amritsar</div>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-heading text-saffron-gold mt-16 mb-6">Education</h2>
+        <ul class="space-y-4">
+          <li>
+            <strong class="text-obsidian-black dark:text-pristine-white block">Bachelors In Culinary Arts</strong>
+            <span class="text-slate-700 dark:text-slate-grey">Queen Margrate University, Edinburg, Navi Mumbai (2014 to 2017)</span>
+          </li>
+        </ul>
+
+        <div class="mt-16 text-center lg:text-left">
+          <ContactButton text="Get In Touch" intent="general" />
+        </div>
+      </div>
       
-      <div class="space-y-12">
-        <div class="border-l-2 border-saffron-gold pl-6">
-          <h3 class="text-xl font-semibold">Cluster Executive Chef</h3>
-          <p class="text-slate-700 dark:text-slate-grey mb-2">OHRI'S GROUP, Hyderabad | Dec 2023 to Present</p>
-          <ul class="list-disc pl-5 text-sm text-slate-700 dark:text-slate-grey space-y-2">
-            <li>Fostered a positive working environment that encouraged collaboration and creativity.</li>
-            <li>Developed custom menus for clients with specific dietary restrictions, ensuring utmost satisfaction.</li>
-            <li>Implemented special events and theme nights to attract new clientele and boost sales.</li>
-            <li>Managed kitchen staff for efficient food production and timely delivery of high-quality dishes.</li>
-          </ul>
+      <!-- Cinematic Image Side Panel -->
+      <div class="hidden lg:block lg:w-1/3">
+        <div class="sticky top-24 reveal">
+          <div class="relative overflow-hidden elite-glass rounded-sm shadow-2xl p-2">
+            <img src="/images/macro_ingredients_1785772081327.jpg" alt="Premium Ingredients" class="w-full h-[600px] object-cover rounded-sm grayscale dark:grayscale-0" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-obsidian-black/80 to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6">
+              <p class="text-saffron-gold font-heading text-xl italic m-0">"Respect the ingredient."</p>
+            </div>
+          </div>
         </div>
-
-        <div class="border-l-2 border-slate-300 dark:border-slate-grey/30 pl-6">
-          <h3 class="text-xl font-semibold">Executive Sous Chef</h3>
-          <p class="text-slate-700 dark:text-slate-grey mb-2">RR Hospitality, Bangalore | Feb 2023 to Present</p>
-          <ul class="list-disc pl-5 text-sm text-slate-700 dark:text-slate-grey space-y-2">
-            <li>Developed menus, controlled food costs, and oversaw quality, sanitation, and safety processes.</li>
-            <li>Plated every dish with attractive flair to meet strict restaurant standards.</li>
-            <li>Initiated training for new team members on culinary techniques to improve productivity.</li>
-            <li>Implemented successful cross-marketing strategies such as food and wine pairings.</li>
-          </ul>
-        </div>
-
-        <div class="border-l-2 border-slate-300 dark:border-slate-grey/30 pl-6">
-          <h3 class="text-xl font-semibold">Sr. Sous Chef</h3>
-          <p class="text-slate-700 dark:text-slate-grey mb-2">Roxie, Bangalore | Oct 2022 to Feb 2023</p>
-          <ul class="list-disc pl-5 text-sm text-slate-700 dark:text-slate-grey space-y-2">
-            <li>Created signature dish which generated high interest and became the best-selling dinner entrée.</li>
-            <li>Reduced food costs by 5% by sourcing and securing new vendor suppliers.</li>
-            <li>Re-designed kitchen stations and equipment placement which increased productivity.</li>
-          </ul>
-        </div>
-      </div>
-
-      <h2 class="text-2xl font-heading text-saffron-gold mt-16 mb-6">Brand Affiliations & Kitchen Experience</h2>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-        <div class="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 p-4 rounded-sm text-center font-heading tracking-widest uppercase">The Oberoi</div>
-        <div class="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 p-4 rounded-sm text-center font-heading tracking-widest uppercase">ST. REGIS</div>
-        <div class="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 p-4 rounded-sm text-center font-heading tracking-widest uppercase">Sofitel</div>
-        <div class="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 p-4 rounded-sm text-center font-heading tracking-widest uppercase">House of Bakers</div>
-        <div class="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 p-4 rounded-sm text-center font-heading tracking-widest uppercase">Sound Cafe</div>
-      </div>
-
-      <h2 class="text-2xl font-heading text-saffron-gold mt-16 mb-6">Consultation Projects</h2>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-        <div class="border border-saffron-gold/30 p-4 rounded-sm text-center">
-          <div class="font-heading tracking-widest uppercase mb-1">Mara Coffee</div>
-          <div class="text-xs text-slate-700 dark:text-slate-grey uppercase">Bangalore</div>
-        </div>
-        <div class="border border-saffron-gold/30 p-4 rounded-sm text-center">
-          <div class="font-heading tracking-widest uppercase mb-1">Dupion</div>
-          <div class="text-xs text-slate-700 dark:text-slate-grey uppercase">Jaipur</div>
-        </div>
-        <div class="border border-saffron-gold/30 p-4 rounded-sm text-center">
-          <div class="font-heading tracking-widest uppercase mb-1">Cabami</div>
-          <div class="text-xs text-slate-700 dark:text-slate-grey uppercase">Varanasi</div>
-        </div>
-        <div class="border border-saffron-gold/30 p-4 rounded-sm text-center">
-          <div class="font-heading tracking-widest uppercase mb-1">Fika</div>
-          <div class="text-xs text-slate-700 dark:text-slate-grey uppercase">Goa</div>
-        </div>
-        <div class="border border-saffron-gold/30 p-4 rounded-sm text-center">
-          <div class="font-heading tracking-widest uppercase mb-1">Fixcabami</div>
-          <div class="text-xs text-slate-700 dark:text-slate-grey uppercase">Goa</div>
-        </div>
-        <div class="border border-saffron-gold/30 p-4 rounded-sm text-center">
-          <div class="font-heading tracking-widest uppercase mb-1">Minimalist Hotel</div>
-        </div>
-        <div class="border border-saffron-gold/30 p-4 rounded-sm text-center">
-          <div class="font-heading tracking-widest uppercase mb-1">Hideon Cafe</div>
-          <div class="text-xs text-slate-700 dark:text-slate-grey uppercase">Amritsar</div>
-        </div>
-      </div>
-
-      <h2 class="text-2xl font-heading text-saffron-gold mt-16 mb-6">Education</h2>
-      <ul class="space-y-4">
-        <li>
-          <strong class="text-obsidian-black dark:text-pristine-white block">Bachelors In Culinary Arts</strong>
-          <span class="text-slate-700 dark:text-slate-grey">Queen Margrate University, Edinburg, Navi Mumbai (2014 to 2017)</span>
-        </li>
-      </ul>
-
-      <div class="mt-16 text-center">
-        <ContactButton text="Get In Touch" intent="general" />
       </div>
     </div>
   </div>
