@@ -16,21 +16,21 @@ import ContactButton from '../components/ContactButton.astro';
         </p>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-        <a href="/portfolio#menu-engineering" class="block bg-slate-50 dark:bg-obsidian-black border border-slate-300 dark:border-slate-grey/20 p-8 hover:border-saffron-gold dark:hover:border-saffron-gold transition-colors group cursor-pointer">
+        <button type="button" data-modal-image="/portfolio/menu_engineering.jpg" data-modal-title="Menu Engineering Strategy" class="block w-full text-left bg-slate-50 dark:bg-obsidian-black border border-slate-300 dark:border-slate-grey/20 p-8 hover:border-saffron-gold dark:hover:border-saffron-gold transition-colors group cursor-pointer">
           <h3 class="text-2xl font-heading text-saffron-gold mb-4 group-hover:scale-[1.02] transition-transform origin-left">Menu Engineering</h3>
           <p class="text-sm text-obsidian-black dark:text-pristine-white mb-6">
             Analyzing profitability, developing custom menus that align with your brand, and standardizing production recipes for absolute consistency.
           </p>
-          <span class="text-xs uppercase tracking-widest font-semibold text-obsidian-black/50 dark:text-pristine-white/50 group-hover:text-saffron-gold transition-colors">View Work &rarr;</span>
-        </a>
+          <span class="text-xs uppercase tracking-widest font-semibold text-obsidian-black/50 dark:text-pristine-white/50 group-hover:text-saffron-gold transition-colors">View Setup &rarr;</span>
+        </button>
         
-        <a href="/portfolio#kitchen-architecture" class="block bg-slate-50 dark:bg-obsidian-black border border-slate-300 dark:border-slate-grey/20 p-8 hover:border-saffron-gold dark:hover:border-saffron-gold transition-colors group cursor-pointer">
+        <button type="button" data-modal-image="/portfolio/kitchen_architecture.jpg" data-modal-title="Kitchen Architecture Design" class="block w-full text-left bg-slate-50 dark:bg-obsidian-black border border-slate-300 dark:border-slate-grey/20 p-8 hover:border-saffron-gold dark:hover:border-saffron-gold transition-colors group cursor-pointer">
           <h3 class="text-2xl font-heading text-saffron-gold mb-4 group-hover:scale-[1.02] transition-transform origin-left">Kitchen Architecture</h3>
           <p class="text-sm text-obsidian-black dark:text-pristine-white mb-6">
             Redesigning kitchen stations and equipment placement to dramatically increase workflow productivity and daily output.
           </p>
-          <span class="text-xs uppercase tracking-widest font-semibold text-obsidian-black/50 dark:text-pristine-white/50 group-hover:text-saffron-gold transition-colors">View Work &rarr;</span>
-        </a>
+          <span class="text-xs uppercase tracking-widest font-semibold text-obsidian-black/50 dark:text-pristine-white/50 group-hover:text-saffron-gold transition-colors">View Setup &rarr;</span>
+        </button>
 
         <div class="bg-slate-50 dark:bg-obsidian-black border border-slate-300 dark:border-slate-grey/20 p-8">
           <h3 class="text-2xl font-heading text-saffron-gold mb-4">Cost Control</h3>
@@ -127,4 +127,70 @@ import ContactButton from '../components/ContactButton.astro';
       </div>
     </div>
   </div>
+
+  <!-- Image Modal -->
+  <div id="image-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-obsidian-black/90 backdrop-blur-sm p-4 transition-opacity duration-300 opacity-0">
+    <div class="relative max-w-5xl w-full mx-auto flex flex-col items-center transform scale-95 transition-transform duration-300" id="modal-content">
+      <button type="button" id="close-modal" class="absolute -top-12 right-0 text-pristine-white hover:text-saffron-gold transition-colors p-2">
+        <span class="sr-only">Close</span>
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+      <img id="modal-image" src="" alt="Work Setup" class="w-full h-auto max-h-[80vh] object-contain rounded-sm shadow-2xl" />
+      <h3 id="modal-title" class="text-saffron-gold font-heading text-2xl mt-6 tracking-widest uppercase"></h3>
+    </div>
+  </div>
+
+  <script is:inline>
+    const modal = document.getElementById('image-modal');
+    const modalContent = document.getElementById('modal-content');
+    const modalImage = document.getElementById('modal-image');
+    const modalTitle = document.getElementById('modal-title');
+    const closeBtn = document.getElementById('close-modal');
+    
+    // Open Modal
+    document.querySelectorAll('button[data-modal-image]').forEach(button => {
+      button.addEventListener('click', () => {
+        const imgSrc = button.getAttribute('data-modal-image');
+        const titleText = button.getAttribute('data-modal-title');
+        
+        modalImage.src = imgSrc;
+        modalTitle.textContent = titleText;
+        
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        
+        // Trigger animation
+        setTimeout(() => {
+          modal.classList.remove('opacity-0');
+          modalContent.classList.remove('scale-95');
+          modalContent.classList.add('scale-100');
+        }, 10);
+      });
+    });
+    
+    // Close Modal Function
+    const closeModal = () => {
+      modal.classList.add('opacity-0');
+      modalContent.classList.remove('scale-100');
+      modalContent.classList.add('scale-95');
+      
+      setTimeout(() => {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        modalImage.src = '';
+      }, 300);
+    };
+
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal();
+    });
+    
+    // Esc key close
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        closeModal();
+      }
+    });
+  </script>
 </Layout>
