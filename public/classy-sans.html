@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classy Sans-Serifs with Lato</title>
+    <!-- Import Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;700&family=Syne:wght@500;700&family=Outfit:wght@400;500;600&family=Tenor+Sans&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        body { 
+            margin: 0; 
+            padding: 40px; 
+            background: #0A221C; /* Forest Green */
+            color: #F0F4F1; /* Off-white */
+            font-family: 'Lato', sans-serif; 
+        }
+        h1 { text-align: center; margin-bottom: 50px; color: #D4AF37; font-family: sans-serif; letter-spacing: 2px; }
+        .grid { display: grid; grid-template-columns: 1fr; gap: 60px; max-w-4xl; margin: auto; }
+        .card { 
+            border-radius: 12px; 
+            overflow: hidden; 
+            background: #132A13; 
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 40px;
+        }
+        
+        .label {
+            display: inline-block;
+            background: rgba(212, 175, 55, 0.1);
+            color: #D4AF37;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            font-family: monospace;
+        }
+
+        .demo-heading {
+            color: #D4AF37; /* Brass */
+            font-size: 48px;
+            margin: 0 0 20px 0;
+            line-height: 1.2;
+        }
+
+        .demo-body {
+            color: #F0F4F1;
+            font-size: 18px;
+            line-height: 1.8;
+            margin: 0;
+            max-width: 800px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+        }
+
+        /* Combinations */
+        .combo-1 .demo-heading { font-family: 'Montserrat', sans-serif; font-weight: 700; letter-spacing: -1px; }
+        .combo-2 .demo-heading { font-family: 'Syne', sans-serif; font-weight: 700; }
+        .combo-3 .demo-heading { font-family: 'Outfit', sans-serif; font-weight: 500; letter-spacing: -1px; }
+        .combo-4 .demo-heading { font-family: 'Tenor Sans', sans-serif; font-weight: 400; text-transform: uppercase; letter-spacing: 2px; }
+        .combo-5 .demo-heading { font-family: 'Jost', sans-serif; font-weight: 500; letter-spacing: 1px; }
+    </style>
+</head>
+<body>
+
+    <h1>CLASSY SANS-SERIFS + LATO BODY</h1>
+    
+    <div class="grid">
+        <div class="card combo-1">
+            <div class="label">Option 1: Montserrat + Lato (Wide & Geometric)</div>
+            <h2 class="demo-heading">Crafting Culinary Excellence.</h2>
+            <p class="demo-body">
+                High-performing Cluster Executive Chef with a legacy of transforming restaurants, designing elite menus, and leading high-volume culinary operations. Montserrat is wide, geometric, and modern, bringing a very strong contemporary vibe.
+            </p>
+        </div>
+
+        <div class="card combo-2">
+            <div class="label">Option 2: Syne + Lato (Avant-Garde & Fashionable)</div>
+            <h2 class="demo-heading">Crafting Culinary Excellence.</h2>
+            <p class="demo-body">
+                High-performing Cluster Executive Chef with a legacy of transforming restaurants, designing elite menus, and leading high-volume culinary operations. Syne is edgy, distinctive, and highly fashionable—perfect for pushing culinary boundaries.
+            </p>
+        </div>
+
+        <div class="card combo-3">
+            <div class="label">Option 3: Outfit + Lato (Clean & Minimalist)</div>
+            <h2 class="demo-heading">Crafting Culinary Excellence.</h2>
+            <p class="demo-body">
+                High-performing Cluster Executive Chef with a legacy of transforming restaurants, designing elite menus, and leading high-volume culinary operations. Outfit is perfectly clean, modern, and highly legible, making the brand feel approachable yet high-end.
+            </p>
+        </div>
+
+        <div class="card combo-4">
+            <div class="label">Option 4: Tenor Sans + Lato (Elegant & Flared)</div>
+            <h2 class="demo-heading">CRAFTING CULINARY EXCELLENCE.</h2>
+            <p class="demo-body">
+                High-performing Cluster Executive Chef with a legacy of transforming restaurants, designing elite menus, and leading high-volume culinary operations. Tenor Sans has delicate, flared ends that give it the elegance of a serif while remaining a modern sans-serif.
+            </p>
+        </div>
+
+        <div class="card combo-5">
+            <div class="label">Option 5: Jost + Lato (Futura-Inspired Luxury)</div>
+            <h2 class="demo-heading">Crafting Culinary Excellence.</h2>
+            <p class="demo-body">
+                High-performing Cluster Executive Chef with a legacy of transforming restaurants, designing elite menus, and leading high-volume culinary operations. Jost is inspired by classic geometric fonts like Futura, bringing a timeless mid-century luxury feel.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

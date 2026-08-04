@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Palette Options</title>
+    <!-- Import Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;500&family=Lora:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;500&family=Cinzel:wght@400;600&family=Lato:wght@300;400;700&family=Bodoni+Moda:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        body { margin: 0; padding: 40px; background: #f9f9f9; font-family: sans-serif; }
+        h1 { text-align: center; margin-bottom: 40px; color: #333; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; max-w-6xl; margin: auto; }
+        .card { border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .header { padding: 30px; text-align: center; }
+        .content { padding: 30px; background: white; }
+        
+        .color-row { display: flex; height: 60px; margin-bottom: 20px; border-radius: 8px; overflow: hidden; }
+        .color-box { flex: 1; display: flex; align-items: center; justify-content: center; color: white; font-size: 12px; font-weight: bold; text-shadow: 0 1px 3px rgba(0,0,0,0.5); }
+        
+        .font-demo { margin-top: 20px; }
+        .font-demo h3 { margin: 0 0 10px 0; font-size: 28px; }
+        .font-demo p { margin: 0; font-size: 16px; line-height: 1.6; }
+        
+        /* Option A: Midnight & Copper */
+        .opt-a .header { background: #0B132B; color: #B87333; font-family: 'Cormorant Garamond', serif; }
+        .opt-a h3 { font-family: 'Cormorant Garamond', serif; color: #0B132B; }
+        .opt-a p { font-family: 'Montserrat', sans-serif; color: #4A4A4A; }
+        
+        /* Option B: Forest & Brass */
+        .opt-b .header { background: #0A221C; color: #D4AF37; font-family: 'Lora', serif; }
+        .opt-b h3 { font-family: 'Lora', serif; color: #0A221C; }
+        .opt-b p { font-family: 'Outfit', sans-serif; color: #4A4A4A; }
+        
+        /* Option C: Monochrome & Ruby */
+        .opt-c .header { background: #1C1C1E; color: #9B111E; font-family: 'Cinzel', serif; }
+        .opt-c h3 { font-family: 'Cinzel', serif; color: #1C1C1E; }
+        .opt-c p { font-family: 'Lato', sans-serif; color: #4A4A4A; }
+        
+        /* Option D: Truffle & Champagne */
+        .opt-d .header { background: #3E2723; color: #F7E7CE; font-family: 'Bodoni Moda', serif; }
+        .opt-d h3 { font-family: 'Bodoni Moda', serif; color: #3E2723; }
+        .opt-d p { font-family: 'DM Sans', sans-serif; color: #4A4A4A; }
+    </style>
+</head>
+<body>
+
+    <h1>Select a New Brand Direction</h1>
+    
+    <div class="grid">
+        <!-- Option A -->
+        <div class="card opt-a">
+            <div class="header">
+                <h2>Option A:<br>Midnight & Copper</h2>
+            </div>
+            <div class="content">
+                <div class="color-row">
+                    <div class="color-box" style="background: #0B132B;">#0B132B</div>
+                    <div class="color-box" style="background: #1A202C;">#1A202C</div>
+                    <div class="color-box" style="background: #B87333;">#B87333</div>
+                    <div class="color-box" style="background: #F4F4F6; color:#333; text-shadow:none;">#F4F4F6</div>
+                </div>
+                <div class="font-demo">
+                    <h3>Cormorant Garamond</h3>
+                    <p style="font-family:'Montserrat'"><strong>Montserrat:</strong> This is a sample of the body text. It provides a clean, modern contrast to the elegant serif headings, perfect for high-end culinary branding.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Option B -->
+        <div class="card opt-b">
+            <div class="header">
+                <h2>Option B:<br>Forest & Brass</h2>
+            </div>
+            <div class="content">
+                <div class="color-row">
+                    <div class="color-box" style="background: #0A221C;">#0A221C</div>
+                    <div class="color-box" style="background: #132A13;">#132A13</div>
+                    <div class="color-box" style="background: #D4AF37;">#D4AF37</div>
+                    <div class="color-box" style="background: #F0F4F1; color:#333; text-shadow:none;">#F0F4F1</div>
+                </div>
+                <div class="font-demo">
+                    <h3>Lora</h3>
+                    <p style="font-family:'Outfit'"><strong>Outfit:</strong> This is a sample of the body text. Lora brings a classic, trustworthy feel while Outfit keeps the UI geometric and fresh.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Option C -->
+        <div class="card opt-c">
+            <div class="header">
+                <h2>Option C:<br>Charcoal & Ruby</h2>
+            </div>
+            <div class="content">
+                <div class="color-row">
+                    <div class="color-box" style="background: #1C1C1E;">#1C1C1E</div>
+                    <div class="color-box" style="background: #2C2C2E;">#2C2C2E</div>
+                    <div class="color-box" style="background: #9B111E;">#9B111E</div>
+                    <div class="color-box" style="background: #FAFAFA; color:#333; text-shadow:none;">#FAFAFA</div>
+                </div>
+                <div class="font-demo">
+                    <h3>Cinzel</h3>
+                    <p style="font-family:'Lato'"><strong>Lato:</strong> This is a sample of the body text. Cinzel is highly cinematic and bold, while Lato is highly readable for long menus and biographies.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Option D -->
+        <div class="card opt-d">
+            <div class="header">
+                <h2>Option D:<br>Truffle & Champagne</h2>
+            </div>
+            <div class="content">
+                <div class="color-row">
+                    <div class="color-box" style="background: #3E2723;">#3E2723</div>
+                    <div class="color-box" style="background: #5D4037;">#5D4037</div>
+                    <div class="color-box" style="background: #F7E7CE; color:#333; text-shadow:none;">#F7E7CE</div>
+                    <div class="color-box" style="background: #FFFBF2; color:#333; text-shadow:none;">#FFFBF2</div>
+                </div>
+                <div class="font-demo">
+                    <h3>Bodoni Moda</h3>
+                    <p style="font-family:'DM Sans'"><strong>DM Sans:</strong> This is a sample of the body text. Warm, rich earth tones paired with high-fashion typography for an exclusive feel.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -3,14 +3,14 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-obsidian-black: #0A0A0A;
-  --color-pristine-white: #FFFFFF;
-  --color-slate-grey: #6B7280;
-  --color-saffron-gold: #F4C430;
-  --color-warm-cream: #FDFBF7;
+  --color-obsidian-black: #0A221C; /* Now maps to Forest Green */
+  --color-pristine-white: #F0F4F1; /* Now maps to Sage Off-White */
+  --color-slate-grey: #7D8F86; /* Now maps to Muted Sage */
+  --color-saffron-gold: #D4AF37; /* Now maps to Brass */
+  --color-warm-cream: #E8EDE9; /* Now maps to Light Forest Cream */
   
-  --font-heading: 'Playfair Display', serif;
-  --font-body: 'Inter', sans-serif;
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Lato', sans-serif;
 }
 
 @layer base {

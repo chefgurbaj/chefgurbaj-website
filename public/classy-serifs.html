@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classy Serifs with Lato</title>
+    <!-- Import Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,500;0,700&family=Bodoni+Moda:ital,wght@0,500;0,700&family=Cinzel:wght@400;600&family=Prata&family=EB+Garamond:ital,wght@0,400;0,600&display=swap" rel="stylesheet">
+    
+    <style>
+        body { 
+            margin: 0; 
+            padding: 40px; 
+            background: #0A221C; /* Forest Green */
+            color: #F0F4F1; /* Off-white */
+            font-family: 'Lato', sans-serif; 
+        }
+        h1 { text-align: center; margin-bottom: 50px; color: #D4AF37; font-family: sans-serif; letter-spacing: 2px; }
+        .grid { display: grid; grid-template-columns: 1fr; gap: 60px; max-w-4xl; margin: auto; }
+        .card { 
+            border-radius: 12px; 
+            overflow: hidden; 
+            background: #132A13; 
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 40px;
+        }
+        
+        .label {
+            display: inline-block;
+            background: rgba(212, 175, 55, 0.1);
+            color: #D4AF37;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            font-family: monospace;
+        }
+
+        .demo-heading {
+            color: #D4AF37; /* Brass */
+            font-size: 48px;
+            margin: 0 0 20px 0;
+            line-height: 1.2;
+        }
+
+        .demo-body {
+            color: #F0F4F1;
+            font-size: 18px;
+            line-height: 1.8;
+            margin: 0;
+            max-width: 800px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+        }
+
+        /* Combinations */
+        .combo-1 .demo-heading { font-family: 'Playfair Display', serif; }
+        .combo-2 .demo-heading { font-family: 'Bodoni Moda', serif; }
+        .combo-3 .demo-heading { font-family: 'Cinzel', serif; }
+        .combo-4 .demo-heading { font-family: 'Prata', serif; }
+        .combo-5 .demo-heading { font-family: 'EB Garamond', serif; }
+    </style>
+</head>
+<body>
+
+    <h1>CLASSY SERIFS + LATO BODY</h1>
+    
+    <div class="grid">
+        <div class="card combo-1">
+            <div class="label">Option 1: Playfair Display + Lato (The Baseline)</div>
+            <h2 class="demo-heading">Crafting Culinary Excellence.</h2>
+            <p class="demo-body">
+                High-performing Cluster Executive Chef with a legacy of transforming restaurants, designing elite menus, and leading high-volume culinary operations. Playfair Display offers high-contrast strokes that scream luxury.
+            </p>
+        </div>
+
+        <div class="card combo-2">
+            <div class="label">Option 2: Bodoni Moda + Lato (High-Fashion Luxury)</div>
+            <h2 class="demo-heading">Crafting Culinary Excellence.</h2>
+            <p class="demo-body">
+                High-performing Cluster Executive Chef with a legacy of transforming restaurants, designing elite menus, and leading high-volume culinary operations. Bodoni Moda is an extremely chic, high-contrast Italian serif often used in fashion magazines.
+            </p>
+        </div>
+
+        <div class="card combo-3">
+            <div class="label">Option 3: Cinzel + Lato (Cinematic & Bold)</div>
+            <h2 class="demo-heading">Crafting Culinary Excellence.</h2>
+            <p class="demo-body">
+                High-performing Cluster Executive Chef with a legacy of transforming restaurants, designing elite menus, and leading high-volume culinary operations. Cinzel brings bold, authoritative Roman proportions for a very striking, cinematic presentation.
+            </p>
+        </div>
+
+        <div class="card combo-4">
+            <div class="label">Option 4: Prata + Lato (Elegant & Refined)</div>
+            <h2 class="demo-heading">Crafting Culinary Excellence.</h2>
+            <p class="demo-body">
+                High-performing Cluster Executive Chef with a legacy of transforming restaurants, designing elite menus, and leading high-volume culinary operations. Prata features teardrop terminals and soft curves, making it incredibly sophisticated and delicate.
+            </p>
+        </div>
+
+        <div class="card combo-5">
+            <div class="label">Option 5: EB Garamond + Lato (Classic & Literary)</div>
+            <h2 class="demo-heading">Crafting Culinary Excellence.</h2>
+            <p class="demo-body">
+                High-performing Cluster Executive Chef with a legacy of transforming restaurants, designing elite menus, and leading high-volume culinary operations. EB Garamond is the gold standard of classic, traditional typography, giving the brand a timeless, established feel.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
