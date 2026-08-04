@@ -4,7 +4,7 @@ import ContactButton from '../components/ContactButton.astro';
 ---
 
 <Layout title="Bio | Chef Gurbaj">
-  <div class="max-w-6xl mx-auto px-4 py-20">
+  <div class="max-w-6xl mx-auto px-4 pt-4 pb-20 lg:pt-16">
     <h1 class="text-4xl md:text-6xl font-heading mb-8 border-b border-slate-300 dark:border-slate-grey/20 pb-6 bg-gradient-to-r from-obsidian-black via-[#997a15] to-obsidian-black dark:from-[#d4af37] dark:via-[#fcf5d2] dark:to-[#d4af37] bg-[length:200%_auto] bg-clip-text text-transparent animate-gradient-wave">
       The <span>Journey</span>
     </h1>
@@ -40,10 +40,10 @@ import ContactButton from '../components/ContactButton.astro';
       </div>
       
       <!-- Cinematic Image Side Panel -->
-      <div class="hidden lg:block lg:w-1/3">
+      <div class="w-full lg:w-1/3 order-first lg:order-last mb-8 lg:mb-0">
         <div class="sticky top-24 reveal">
           <div class="relative overflow-hidden elite-glass rounded-sm shadow-2xl p-2">
-            <img src="/images/cafe_raw_materials_1785772861508.jpg" alt="Premium Cafe Ingredients" class="w-full h-[600px] object-cover rounded-sm" loading="lazy" />
+            <img src="/images/cafe_raw_materials_1785772861508.jpg" alt="Premium Cafe Ingredients" class="w-full h-[400px] lg:h-[600px] object-cover rounded-sm" loading="lazy" />
             <div class="absolute inset-0 bg-gradient-to-t from-obsidian-black/80 to-transparent"></div>
             <div class="absolute bottom-6 left-6 right-6">
               <p class="text-saffron-gold font-heading text-xl italic m-0">"Respect the ingredient."</p>

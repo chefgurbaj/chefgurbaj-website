@@ -4,38 +4,54 @@ import ContactButton from '../components/ContactButton.astro';
 ---
 
 <Layout title="Education & Mentorship | Chef Gurbaj">
-  <div class="max-w-4xl mx-auto px-4 py-20">
+  <div class="max-w-6xl mx-auto px-4 pt-4 pb-20 lg:pt-16">
     <h1 class="text-4xl md:text-6xl font-heading mb-8 border-b border-slate-300 dark:border-slate-grey/20 pb-6 bg-gradient-to-r from-obsidian-black via-[#997a15] to-obsidian-black dark:from-[#d4af37] dark:via-[#fcf5d2] dark:to-[#d4af37] bg-[length:200%_auto] bg-clip-text text-transparent animate-gradient-wave">
       Culinary <span>Education</span>
     </h1>
 
-    <div class="prose dark:prose-invert prose-p:text-slate-700 dark:text-slate-grey prose-headings:text-obsidian-black dark:text-pristine-white max-w-none">
-      <p class="text-xl font-light leading-relaxed mb-16 reveal">
-        The culinary world is intensely competitive. Beyond building brands, my core mission is to elevate the next generation of chefs. Whether you need a resume review or long-term career guidance, I am here to help you navigate the industry.
-      </p>
+    <div class="flex flex-col lg:flex-row gap-12">
+      <!-- Main Content -->
+      <div class="prose dark:prose-invert prose-p:text-slate-700 dark:text-slate-grey prose-headings:text-obsidian-black dark:text-pristine-white max-w-none lg:w-2/3">
+        <p class="text-xl font-light leading-relaxed mb-16 reveal">
+          The culinary world is intensely competitive. Beyond building brands, my core mission is to elevate the next generation of chefs. Whether you need a resume review or long-term career guidance, I am here to help you navigate the industry.
+        </p>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 reveal">
-        <div class="bg-slate-50 dark:bg-obsidian-black border border-slate-300 dark:border-slate-grey/20 p-8 hover:border-saffron-gold/50 transition-colors">
-          <h3 class="text-2xl font-heading text-saffron-gold mb-4">Resume & Portfolio Review</h3>
-          <p class="text-sm text-slate-700 dark:text-slate-grey">
-            Your resume is your first impression. Send it over, and I'll help you structure it to highlight your strengths, filter out the noise, and catch the eye of Executive Chefs.
-          </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 reveal">
+          <div class="bg-slate-50 dark:bg-obsidian-black border border-slate-300 dark:border-slate-grey/20 p-8 hover:border-saffron-gold/50 transition-colors">
+            <h3 class="text-2xl font-heading text-saffron-gold mb-4">Resume & Portfolio Review</h3>
+            <p class="text-sm text-slate-700 dark:text-slate-grey">
+              Your resume is your first impression. Send it over, and I'll help you structure it to highlight your strengths, filter out the noise, and catch the eye of Executive Chefs.
+            </p>
+          </div>
+          
+          <div class="bg-slate-50 dark:bg-obsidian-black border border-slate-300 dark:border-slate-grey/20 p-8 hover:border-saffron-gold/50 transition-colors">
+            <h3 class="text-2xl font-heading text-saffron-gold mb-4">Career Roadmap</h3>
+            <p class="text-sm text-slate-700 dark:text-slate-grey">
+              Stuck as a Commis or Demi Chef? We will sit down and architect a clear, actionable roadmap to accelerate your path to Sous Chef and beyond.
+            </p>
+          </div>
         </div>
-        
-        <div class="bg-slate-50 dark:bg-obsidian-black border border-slate-300 dark:border-slate-grey/20 p-8 hover:border-saffron-gold/50 transition-colors">
-          <h3 class="text-2xl font-heading text-saffron-gold mb-4">Career Roadmap</h3>
-          <p class="text-sm text-slate-700 dark:text-slate-grey">
-            Stuck as a Commis or Demi Chef? We will sit down and architect a clear, actionable roadmap to accelerate your path to Sous Chef and beyond.
+
+        <div class="bg-gradient-to-r from-saffron-gold/10 to-transparent border-l-4 border-saffron-gold p-8 reveal">
+          <h2 class="text-2xl font-heading text-obsidian-black dark:text-pristine-white mb-4 mt-0">Ready to accelerate your career?</h2>
+          <p class="text-slate-700 dark:text-slate-grey mb-8">
+            Send me your resume and a brief introduction on WhatsApp. Let's get to work.
           </p>
+          <ContactButton intent="aspiring-chef" text="Connect with Chef Gurbaj" />
         </div>
       </div>
 
-      <div class="bg-gradient-to-r from-saffron-gold/10 to-transparent border-l-4 border-saffron-gold p-8 reveal">
-        <h2 class="text-2xl font-heading text-obsidian-black dark:text-pristine-white mb-4 mt-0">Ready to accelerate your career?</h2>
-        <p class="text-slate-700 dark:text-slate-grey mb-8">
-          Send me your resume and a brief introduction on WhatsApp. Let's get to work.
-        </p>
-        <ContactButton intent="aspiring-chef" text="Connect with Chef Gurbaj" />
+      <!-- Cinematic Image Side Panel (Mobile First) -->
+      <div class="w-full lg:w-1/3 order-first lg:order-last mb-8 lg:mb-0">
+        <div class="sticky top-24 reveal delay-100">
+          <div class="relative overflow-hidden elite-glass rounded-sm shadow-2xl p-2">
+            <img src="/images/chefs_cooking_fire_1785772872322.jpg" alt="Chefs Training" class="w-full h-[400px] lg:h-[600px] object-cover rounded-sm" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-obsidian-black/80 to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6">
+              <p class="text-saffron-gold font-heading text-xl italic m-0">"Pass the flame."</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
