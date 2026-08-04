@@ -14,9 +14,6 @@
 }
 
 @layer base {
-  body {
-    @apply bg-warm-cream dark:bg-obsidian-black text-obsidian-black dark:text-pristine-white font-body relative overflow-x-hidden;
-  }
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading;
   }
