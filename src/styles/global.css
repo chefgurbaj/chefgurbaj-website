@@ -59,7 +59,7 @@
   
   /* Glassmorphism for Light and Dark modes */
   .elite-glass {
-    @apply bg-white/20 dark:bg-white/5 backdrop-blur-xl border border-white/30 dark:border-white/10;
+    @apply bg-white/20 dark:bg-white/5 backdrop-blur-xl border border-saffron-gold/50 dark:border-saffron-gold/30;
     /* Light Mode Shadows: Dramatic, elevated, layered */
     box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.8), 
                 0 15px 40px rgba(0, 0, 0, 0.08), 
@@ -73,7 +73,7 @@
   }
   
   .group:hover .elite-glass, .elite-glass:hover {
-    @apply border-saffron-gold/50 dark:border-saffron-gold/30;
+    @apply border-white/30 dark:border-white/10;
     /* Light Mode Hover */
     box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.6), 0 15px 50px rgba(0, 0, 0, 0.15), 0 30px 80px -15px rgba(244,196,48,0.3);
   }
