@@ -6,29 +6,29 @@ const { class: className = '' } = Astro.props;
 ---
 
 <div class:list={["w-full flex justify-center items-center py-12 relative overflow-hidden", className]}>
-  <div class="relative w-48 md:w-64 opacity-60 hover:opacity-100 transition-opacity duration-700">
+  <div class="relative w-64 md:w-96 opacity-60 hover:opacity-100 transition-opacity duration-700">
     <!-- SVG Realistic Chef Knife -->
-    <svg viewBox="0 0 200 45" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full drop-shadow-[0_4px_6px_rgba(0,0,0,0.3)] dark:drop-shadow-[0_2px_10px_rgba(212,175,55,0.2)]">
+    <svg viewBox="0 0 400 45" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full drop-shadow-[0_4px_6px_rgba(0,0,0,0.3)] dark:drop-shadow-[0_2px_10px_rgba(212,175,55,0.2)]">
       
       <!-- Handle -->
-      <path d="M 8 18 Q 8 15 12 15 L 45 15 L 45 28 L 14 28 Q 8 28 8 23 Z" fill="#1C1C1E" stroke="#000" stroke-width="0.5"/>
+      <path d="M 10 18 Q 10 14 15 14 L 65 14 L 65 28 L 20 28 Q 10 28 10 23 Z" fill="#1C1C1E" stroke="#000" stroke-width="0.5"/>
       
       <!-- Handle Rivets -->
-      <circle cx="18" cy="21.5" r="1.5" fill="#888"/>
-      <circle cx="28" cy="21.5" r="1.5" fill="#888"/>
-      <circle cx="38" cy="21.5" r="1.5" fill="#888"/>
+      <circle cx="25" cy="21" r="2" fill="#888"/>
+      <circle cx="40" cy="21" r="2" fill="#888"/>
+      <circle cx="55" cy="21" r="2" fill="#888"/>
       
-      <!-- Bolster (Metal part between handle and blade) -->
-      <path d="M 45 14 L 49 14 L 49 34 C 47 34 45 30 45 28 Z" fill="#A0A0A0"/>
+      <!-- Bolster -->
+      <path d="M 65 13 L 70 13 L 70 34 C 68 34 65 30 65 28 Z" fill="#A0A0A0"/>
 
-      <!-- Blade -->
-      <path d="M 49 14 L 175 14 Q 192 14 196 22 Q 170 36 110 34 L 49 34 Z" fill="url(#blade-gradient)"/>
+      <!-- Blade (Sleek, elongated) -->
+      <path d="M 70 14 L 350 14 Q 380 14 390 22 Q 330 38 150 34 L 70 34 Z" fill="url(#blade-gradient)"/>
       
       <!-- Edge Highlight -->
-      <path d="M 49 34 L 110 34 Q 170 36 196 22" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="0.75"/>
+      <path d="M 70 34 L 150 34 Q 330 38 390 22" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="0.75"/>
       
       <defs>
-        <linearGradient id="blade-gradient" x1="49" y1="14" x2="196" y2="34" gradientUnits="userSpaceOnUse">
+        <linearGradient id="blade-gradient" x1="70" y1="14" x2="390" y2="34" gradientUnits="userSpaceOnUse">
           <stop stop-color="#E2E2E2"/>
           <stop offset="0.4" stop-color="#999999"/>
           <stop offset="0.8" stop-color="#555555"/>
@@ -45,15 +45,15 @@ const { class: className = '' } = Astro.props;
 
 <style>
   .knife-mask {
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 45' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 49 14 L 175 14 Q 192 14 196 22 Q 170 36 110 34 L 49 34 Z' fill='black'/%3E%3C/svg%3E");
-    mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 45' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 49 14 L 175 14 Q 192 14 196 22 Q 170 36 110 34 L 49 34 Z' fill='black'/%3E%3C/svg%3E");
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 45' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 70 14 L 350 14 Q 380 14 390 22 Q 330 38 150 34 L 70 34 Z' fill='black'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 45' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 70 14 L 350 14 Q 380 14 390 22 Q 330 38 150 34 L 70 34 Z' fill='black'/%3E%3C/svg%3E");
   }
   .animate-gleam {
-    animation: gleam 3.5s infinite ease-in-out;
+    animation: gleam 4s infinite ease-in-out;
   }
   @keyframes gleam {
-    0% { transform: translateX(-150%) skewX(-25deg); }
-    25% { transform: translateX(600%) skewX(-25deg); }
-    100% { transform: translateX(600%) skewX(-25deg); }
+    0% { transform: translateX(-150%) skewX(-30deg); }
+    30% { transform: translateX(600%) skewX(-30deg); }
+    100% { transform: translateX(600%) skewX(-30deg); }
   }
 </style>
