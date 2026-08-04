@@ -4,10 +4,10 @@
 
 @theme {
   --color-obsidian-black: #0A221C; /* Now maps to Forest Green */
-  --color-pristine-white: #F0F4F1; /* Now maps to Sage Off-White */
-  --color-slate-grey: #7D8F86; /* Now maps to Muted Sage */
+  --color-pristine-white: #DFE8E3; /* Light Sage Green (more pronounced tint) */
+  --color-slate-grey: #6E8779; /* Muted Forest Green */
   --color-saffron-gold: #D4AF37; /* Now maps to Brass */
-  --color-warm-cream: #E8EDE9; /* Now maps to Light Forest Cream */
+  --color-warm-cream: #D0DDD6; /* Slightly darker Sage */
   
   --font-heading: 'Outfit', sans-serif;
   --font-body: 'Lato', sans-serif;
