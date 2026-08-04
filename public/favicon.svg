@@ -1,4 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="120" fill="#0A0A0A" />
-  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Georgia, serif" font-size="240" font-weight="700" fill="#F4C430">GS</text>
+  <rect width="512" height="512" rx="120" fill="#0A221C" />
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Outfit, system-ui, sans-serif" font-size="220" font-weight="700" letter-spacing="-5" fill="#D4AF37">CG</text>
 </svg>
