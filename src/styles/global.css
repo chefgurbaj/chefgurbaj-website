@@ -27,8 +27,7 @@
   }
   
   .animate-gradient-wave {
-    background-size: 200% auto;
-    animation: gradient-wave 12s ease infinite;
+    background-size: cover;
   }
   
   .animate-slow-glow {
