@@ -14,6 +14,8 @@ if (intent === 'consultation') {
   message = 'Hi Chef Gurbaj, I am interested in booking a consultation for my brand/restaurant.';
 } else if (intent === 'aspiring-chef') {
   message = 'Hi Chef Gurbaj, I am an aspiring chef and would like to submit my resume for your review.';
+} else if (intent === 'portfolio') {
+  message = 'Hi Chef Gurbaj, I would love to get a quote from you for my restaurant.';
 }
 
 const waUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
