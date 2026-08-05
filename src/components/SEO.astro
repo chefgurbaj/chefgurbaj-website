@@ -1,0 +1,62 @@
+---
+export interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  canonicalUrl?: string;
+}
+
+const {
+  title = "Chef Gurbaj | Culinary Excellence",
+  description = "Chef Gurbaj is a High-Performing Cluster Executive Chef with a legacy of transforming restaurants, designing elite menus, and leading high-volume culinary operations.",
+  image = "/images/hero_empty_kitchen_1785773392288.jpg",
+  canonicalUrl = Astro.url.href,
+} = Astro.props;
+
+const siteUrl = "https://chefgurbaj.com";
+const fullImageUrl = new URL(image, siteUrl).toString();
+
+// JSON-LD Structured Data for AI Search Enablement (Google, Perplexity, ChatGPT)
+// This definitively tells AI who Chef Gurbaj is, rather than making it guess from the text.
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Chef Gurbaj",
+  "jobTitle": "Cluster Executive Chef",
+  "url": siteUrl,
+  "image": fullImageUrl,
+  "description": description,
+  "knowsAbout": ["Menu Engineering", "Culinary Architecture", "Molecular Gastronomy", "High-Volume Food Operations"],
+};
+---
+
+<!-- Global Metadata -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<meta name="generator" content={Astro.generator} />
+
+<!-- Canonical URL -->
+<link rel="canonical" href={canonicalUrl} />
+
+<!-- Primary Meta Tags -->
+<title>{title}</title>
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+
+<!-- Open Graph / Facebook / LinkedIn -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={fullImageUrl} />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={canonicalUrl} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={fullImageUrl} />
+
+<!-- AI Search & Structured Data -->
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />

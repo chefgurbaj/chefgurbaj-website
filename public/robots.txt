@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Specifically allow AI and Search crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://chefgurbaj.com/sitemap-index.xml
