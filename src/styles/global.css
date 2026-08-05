@@ -119,3 +119,14 @@
   0% { transform: translateX(0%); }
   100% { transform: translateX(-50%); }
 }
+
+@keyframes marquee-reverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+
+@layer utilities {
+  .animate-marquee-reverse {
+    animation: marquee-reverse 35s linear infinite;
+  }
+}
